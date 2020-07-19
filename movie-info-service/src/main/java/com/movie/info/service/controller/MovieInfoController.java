@@ -1,7 +1,7 @@
 package com.movie.info.service.controller;
 
 import com.movie.info.service.bean.MovieInfo;
-import com.movie.info.service.dao.Movie;
+import com.movie.info.service.dao.MovieRead;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MovieInfoController {
 
     @Autowired
-    private Movie moveInfo;
+    private MovieRead moveInfo;
 
     @GetMapping("/test")
     public ResponseEntity<String> test(){
