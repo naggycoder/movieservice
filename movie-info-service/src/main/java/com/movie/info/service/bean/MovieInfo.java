@@ -1,13 +1,21 @@
 package com.movie.info.service.bean;
 
-public class MovieInfo {
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
+public class MovieInfo {
+    @Id
     private Integer movie_id = null;
     private String movie_name = null;
     private String movie_description = null;
     private String release_date = null;
     private String create_date = null;
     private String update_date = null;
+
+    public MovieInfo(){
+
+    }
 
     public MovieInfo(Integer movie_id, String movie_name, String movie_description, String release_date, String create_date, String update_date) {
         this.movie_id = movie_id;
