@@ -5,6 +5,7 @@ import javax.persistence.Id;
 
 @Entity
 public class MovieInfo {
+    // Java bean which is linked with MySQL
     @Id
     private Integer movie_id = null;
     private String movie_name = null;
@@ -13,7 +14,7 @@ public class MovieInfo {
     private String create_date = null;
     private String update_date = null;
 
-    public MovieInfo(){
+    public MovieInfo() {
 
     }
 
